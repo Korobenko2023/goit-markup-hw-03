@@ -20,6 +20,8 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -37,7 +39,41 @@ body {
   overflow: hidden;
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*TODO Header*/
+
+.header {
+  padding: 24px 156px;
+  border-bottom: 1px solid var(--cornflower-color);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -46,9 +82,15 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-color);
+  margin-right: 76px;
 }
 .header-logo-color {
   color: var(--navy-color);
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .header-link {
   font-weight: 500;
@@ -60,6 +102,12 @@ body {
 }
 .header-address {
   font-style: normal;
+  margin-left: auto;
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .address-link {
   font-weight: 400;
@@ -73,61 +121,127 @@ body {
 /*TODO Hearo*/
 .hero {
   background-color: var(--navy-color);
+  padding: 188px 0;
+  text-align: center;
 }
+.hero-inner {
+  display: block;
+}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  max-width: 496px;
   color: var(--white-color);
+  margin: auto;
+  margin-bottom: 48px;
 }
+
 .hero-btn {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+
+  color: var(--white-color);
+  background-color: var(--iris-color);
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--white-color);
-  background-color: var(--iris-color);
+
+  text-decoration: none;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--ocean-color);
 }
 /*TODO Feature*/
+.feature {
+  padding: 120px 0;
+}
+.feature-inner {
+  display: flex;
+  flex-direction: column;
+  
+}
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.feature-item {
+  width: calc((100%-72px) / 4);
+}
 .feature-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navy-color);
+  margin-bottom: 8px;
+}
+.feature-text {
+  order: 1;
 }
 /*TODO Doing*/
+.doing {
+  padding-bottom: 120px;
+}
+
 .doing-title {
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
   text-align: center;
   color: var(--navy-color);
+  margin-bottom: 72px;
+}
+.doing-list {
+  display: flex;
+  gap: 24px;
+}
+.doing-item{
+  width calc((100% - 48px) / 3);
 }
 /*TODO Team*/
 .team {
   background-color: var(--cloud-color);
+  padding-top: 120px;
+  text-align: center;
 }
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
   text-align: center;
   color: var(--navy-color);
+  margin-bottom: 72px;
+}
+.team-list {
+  padding-bottom: 120px;
+  display: flex;
+  gap: 24px;
+ 
 }
 .team-item {
   background-color: var(--white-color);
+  width calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navy-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 /*TODO Portfolio Hero*/
 .portfolio-btn {
@@ -157,7 +271,10 @@ body {
 /*TODO Footer*/
 .footer {
   background: var(--navy-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -166,6 +283,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-color);
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-logo-color {
@@ -174,4 +293,5 @@ body {
 .footer-text {
   font-weight: 400;
   color: var(--cloud-color);
+  max-width: 264px;
 }
