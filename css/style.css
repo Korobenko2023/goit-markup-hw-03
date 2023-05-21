@@ -274,9 +274,10 @@ img {
 }
 
 /*TODO Portfolio Hero*/
-.filters{
-  padding: 96px 0 120px;   
+.portfolio{
+  padding: 96px 0 120px;
 }
+
 .filters-list{
   display: flex;
   gap: 24px;
