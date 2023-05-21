@@ -10,6 +10,7 @@
   --white-color: #ffffff;
   --dairy-color: #fcfcfc;
 }
+
 body {
   background: var(--white-color);
   font-family: "Roboto", sans-serif;
@@ -18,14 +19,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate-color);
 }
+
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .link {
   text-decoration: none;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -43,7 +47,7 @@ body {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid;
+  /* outline: 2px solid; */
 }
 
 h1,
@@ -52,6 +56,7 @@ h3,
 p {
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -61,9 +66,9 @@ img {
 /*TODO Header*/
 
 .header {
-  padding: 24px 156px;
   border-bottom: 1px solid var(--cornflower-color);
 }
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -83,15 +88,19 @@ img {
   text-transform: uppercase;
   color: var(--iris-color);
   margin-right: 76px;
+  padding: 24px 0;
+  
 }
 .header-logo-color {
   color: var(--navy-color);
 }
+
 .header-list {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
 .header-link {
   font-weight: 500;
   color: var(--navy-color);
@@ -100,19 +109,24 @@ img {
 .header-link:focus {
   color: var(--ocean-color);
 }
+
 .header-address {
   font-style: normal;
   margin-left: auto;
 }
+
 .address {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
 .address-link {
   font-weight: 400;
   color: var(--slate-color);
+  padding: 24px 0;
 }
+
 .address-link:hover,
 .address-link:focus {
   color: var(--ocean-color);
@@ -124,6 +138,7 @@ img {
   padding: 188px 0;
   text-align: center;
 }
+
 .hero-inner {
   display: block;
 }
@@ -138,38 +153,39 @@ img {
 }
 
 .hero-btn {
-  display: inline-block;
+  display: block;
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
+  margin: auto;
   min-width: 169px;
-
   color: var(--white-color);
   background-color: var(--iris-color);
-
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
   text-decoration: none;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--ocean-color);
 }
+
 /*TODO Feature*/
 .feature {
   padding: 120px 0;
 }
+
 .feature-inner {
   display: flex;
   flex-direction: column;
-  
-}
+  }
+
 .feature-list {
   display: flex;
   justify-content: center;
@@ -179,6 +195,7 @@ img {
 .feature-item {
   width: calc((100%-72px) / 4);
 }
+
 .feature-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -186,9 +203,11 @@ img {
   color: var(--navy-color);
   margin-bottom: 8px;
 }
+
 .feature-text {
   order: 1;
 }
+
 /*TODO Doing*/
 .doing {
   padding-bottom: 120px;
@@ -202,17 +221,20 @@ img {
   color: var(--navy-color);
   margin-bottom: 72px;
 }
+
 .doing-list {
   display: flex;
   gap: 24px;
 }
+
 .doing-item{
   width calc((100% - 48px) / 3);
 }
+
 /*TODO Team*/
 .team {
   background-color: var(--cloud-color);
-  padding-top: 120px;
+  padding: 120px 0;
   text-align: center;
 }
 
@@ -224,25 +246,32 @@ img {
   color: var(--navy-color);
   margin-bottom: 72px;
 }
+
 .team-list {
   padding-bottom: 120px;
   display: flex;
   gap: 24px;
- 
-}
+ }
+
 .team-item {
   background-color: var(--white-color);
   width calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
+
+.team-name{
+  padding: 32px 16px;
+  text-align: center;
+}
+
 .subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navy-color);
-  margin-top: 32px;
   margin-bottom: 8px;
 }
+
 /*TODO Portfolio Hero*/
 .portfolio-btn {
   font-family: "Roboto", sans-serif;
@@ -254,26 +283,29 @@ img {
   background-color: var(--cloud-color);
   cursor: pointer;
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--ocean-color);
   color: var(--white-color);
 }
+
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--navy-color);
 }
+
 .item-text {
   color: var(--slate-color);
 }
+
 /*TODO Footer*/
 .footer {
   background: var(--navy-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+  padding: 100px 0;
+  }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -290,6 +322,7 @@ img {
 .footer-logo-color {
   color: var(--cloud-color);
 }
+
 .footer-text {
   font-weight: 400;
   color: var(--cloud-color);
